@@ -1,0 +1,51 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+}
+
+/*--------Navegación--------*/
+header{
+    height: 67px;
+    width: 100%; 
+    /* 100%: este % ocupa de esquina a otra esquina-completo, pero si colocas 50% solo ocupa la mitad*/
+    
+}
+
+/* *{:el asterísco es el símbolo universal que te permite utilizar todo lo que tienes en html*/
+
+header nav{
+    
+    /*Display: flex; te  habilita la función flex, 
+    el cual hace los elementos sean responsivos y se puedan mover*/
+    display: flex; 
+    /*Jusify-content: flex-end: permite justificar los elementos en la esquina derecha*/
+    justify-content: flex-end; 
+
+}
+
+/*.{: con el punto se llama a las clases*/
+
+header nav .nav-right-section{
+    width: 25%;
+/*List-style: none; te permite quitar los puntitos de los elementos de la lista*/
+    list-style: none;
+    display: flex;
+/*Justify-content: center: permite justificar los elementos en forma de lista pero horizontal*/
+    justify-content: center; 
+/*align-items: permite justificar los elemetos en vertical y centro*/
+    align-items: center; 
+    height: auto;
+}
+
+a{
+/*text-decoration: none; te permite quitar las lineas de los hipervinculos*/
+text-decoration: none;
+}
+
+nav .nav-right-section a{
+    margin-right: 25px;
+    color: rgba(0,0,0,.87);
+    
+}
